@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iFridge</string>
+    <string name="add">Añadir</string>
+    <string name="datebuy">Fecha de compra</string>
+    <string name="dateexpiry">Fecha de caducidad</string>
+    <string name="food">Comida</string>
+    <string name="foodaddlist">Añadir comida</string>
+    <string name="ifridge">iFridge</string>
+    <string name="nocingHere">Nada por aqui</string>
+</resources>

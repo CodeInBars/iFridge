@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">iFridge</string>
+    <string name="ifridge">iFridge</string>
+    <string name="nocingHere">Nocing here</string>
+    <string name="food">Food</string>
+    <string name="datebuy">Date of Buy</string>
+    <string name="dateexpiry">Date of Expiry</string>
+    <string name="add">Add</string>
+    <string name="foodaddlist">Food add</string>
+</resources>
