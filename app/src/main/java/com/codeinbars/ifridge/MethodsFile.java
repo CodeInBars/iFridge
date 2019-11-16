@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.Environment;
+import android.util.Log;
 
 
 import androidx.core.app.NotificationCompat;
@@ -58,14 +59,19 @@ public class MethodsFile {
         for(int i = 0; i<food.size(); i++){
 
             try{
-                dates.add(new SimpleDateFormat("dd/MM/yyyy").parse(food.get(i).getDateExpire()));
+                Date c;
+                c = new SimpleDateFormat("dd/MM/yyyy").parse(food.get(i).getDateExpire());
+                Log.d("Date", "Fecha: " + c.toString());
+                dates.add(c);
+
             }catch (ParseException e){
 
             }
 
         }
-        for(int x = 0; x<dates.size(); x++){
 
+        for(int x = 0; x<dates.size(); x++){
+            Log.d("Date", dates.get(x).toString()+"  "+dateToday);
             if((dates.get(x).compareTo(dateToday))==0){
                 createNotification(food.get(x).getName(),context);
             }

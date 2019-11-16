@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
             adapter = new ArrayAdapter<String>(this,R.layout.listviewstyle, R.id.bText, values);
 
             foodList.setAdapter(adapter);
-
+            MethodsFile.sendNotification(foodListMain,MainActivity.this);
             foodList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
