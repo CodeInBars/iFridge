@@ -61,7 +61,6 @@ public class MethodsFile {
             try{
                 Date c;
                 c = new SimpleDateFormat("dd/MM/yyyy").parse(food.get(i).getDateExpire());
-                Log.d("Date", "Fecha: " + c.toString());
                 dates.add(c);
 
             }catch (ParseException e){
@@ -71,10 +70,11 @@ public class MethodsFile {
         }
 
         for(int x = 0; x<dates.size(); x++){
-            Log.d("Date", dates.get(x).toString()+"  "+dateToday);
-            if((dates.get(x).compareTo(dateToday))==0){
-                createNotification(food.get(x).getName(),context);
-            }
+            if((dates.get(x).getDay() == dateToday.getDay()))
+                if((dates.get(x).getMonth() == dateToday.getMonth()))
+                    if((dates.get(x).getYear() == dateToday.getYear()))
+                        createNotification(food.get(x).getName(),context);
+
         }
 
     }
