@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -13,15 +13,13 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="40sp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="200sp"
+        android:layout_marginEnd="50sp"
         android:background="@drawable/edittext_rounded_border"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:paddingLeft="10sp"
+        android:paddingTop="7sp"
+    >
 
         <EditText
             android:id="@+id/foodnameadd"
@@ -41,13 +39,12 @@
         android:id="@+id/relativeLayout2"
         android:layout_width="250sp"
         android:layout_height="40sp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="270sp"
         android:background="@drawable/edittext_rounded_border"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        android:paddingLeft="10sp"
+        android:paddingTop="7sp"
+    >
 
         <EditText
             android:id="@+id/dateexpiryadd"
@@ -69,11 +66,11 @@
         android:id="@+id/relativeLayout3"
         android:layout_width="250sp"
         android:layout_height="40sp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="340sp"
         android:background="@drawable/edittext_rounded_border"
-        android:paddingLeft="10dp"
-        android:paddingTop="7dp"
+        android:paddingLeft="10sp"
+        android:paddingTop="7sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
 
@@ -94,33 +91,33 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="167dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="200sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="150sp"
+        android:layout_marginRight="150sp"
         android:text="@string/add"
         android:background="@drawable/button_rounded"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3" />
+     />
 
     <Button
         android:id="@+id/btnExpiryDate"
-        android:layout_width="70dp"
-        android:layout_height="41dp"
+        android:layout_width="70sp"
+        android:layout_height="41sp"
         android:layout_marginLeft="3sp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/button_rounded"
-        app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+        android:layout_marginTop="270sp"
+        android:layout_marginRight="40sp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_rounded"/>
 
     <Button
         android:id="@+id/btnBuyDate"
-        android:layout_width="70dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="51dp"
+        android:layout_width="70sp"
+        android:layout_height="41sp"
+        android:layout_marginTop="340sp"
+        android:layout_marginRight="40sp"
+        android:layout_alignParentRight="true"
         android:background="@drawable/button_rounded"
-        app:layout_constraintStart_toEndOf="@+id/relativeLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/btnExpiryDate" />
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
