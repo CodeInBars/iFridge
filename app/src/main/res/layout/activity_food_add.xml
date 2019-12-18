@@ -37,10 +37,11 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="250sp"
+        android:layout_width="220sp"
         android:layout_height="40sp"
         android:layout_marginStart="50sp"
         android:layout_marginTop="270sp"
+        android:layout_marginRight="80sp"
         android:background="@drawable/edittext_rounded_border"
         android:paddingLeft="10sp"
         android:paddingTop="7sp"
@@ -64,7 +65,7 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout3"
-        android:layout_width="250sp"
+        android:layout_width="220sp"
         android:layout_height="40sp"
         android:layout_marginStart="50sp"
         android:layout_marginTop="340sp"
@@ -91,32 +92,33 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20sp"
-        android:layout_marginBottom="200sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="150sp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="150sp"
-        android:layout_marginRight="150sp"
+        android:layout_centerInParent= "true"
         android:text="@string/add"
         android:background="@drawable/button_rounded"
      />
 
     <Button
         android:id="@+id/btnExpiryDate"
-        android:layout_width="70sp"
+        android:layout_width="wrap_content"
         android:layout_height="41sp"
+        android:layout_toRightOf="@id/relativeLayout2"
         android:layout_marginLeft="3sp"
-        android:layout_marginTop="270sp"
-        android:layout_marginRight="40sp"
-        android:layout_alignParentRight="true"
+        android:layout_marginRight="30sp"
+        android:layout_alignBottom="@id/relativeLayout2"
+
         android:background="@drawable/button_rounded"/>
 
     <Button
         android:id="@+id/btnBuyDate"
-        android:layout_width="70sp"
+        android:layout_width="wrap_content"
         android:layout_height="41sp"
-        android:layout_marginTop="340sp"
-        android:layout_marginRight="40sp"
-        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3sp"
+        android:layout_marginRight="30sp"
+        android:layout_alignBottom="@id/relativeLayout3"
+        android:layout_toRightOf="@id/relativeLayout3"
         android:background="@drawable/button_rounded"
         />
 
